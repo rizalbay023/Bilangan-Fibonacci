@@ -1,0 +1,49 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+int fibo(int nilai)
+{
+	if (nilai == 0)
+	{
+		return 0;
+	}
+	else if (nilai == 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return fibo(nilai - 1) + fibo(nilai - 2);
+	}
+}
+
+int main()
+{
+	do
+	{
+		system("cls");
+		cout << "Program Mencari Bilangan Fibonacci" << endl << endl;
+		system("pause");
+		system("cls");
+		cout << "Masukkan Angka: ";
+		int x, pilih;
+		cin >> x;
+		system("cls");
+		cout << "Bilangan Fibonacci Dari " << x << " Adalah " << fibo(x) << endl << endl;
+		system("pause");
+		system("cls");
+		cout << "Keluar Program?" << endl << endl;
+		cout << "1. Ya \n2. Tidak" << endl << endl;
+		cout << "Pilihan: ";
+		cin >> pilih;
+		if (pilih == 1)
+		{
+			break;
+		}
+		else if (pilih == 2)
+		{
+
+		}
+	} while (true);
+}
